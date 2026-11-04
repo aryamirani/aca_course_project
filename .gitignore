@@ -1,0 +1,14 @@
+# fetched by setup.sh / scripts/get_traces.sh
+ChampSim/
+traces/
+
+# build outputs
+tools/bp_driver
+
+# python
+.venv/
+__pycache__/
+
+# local scratch
+results_ipc_sweep.log
+.DS_Store
