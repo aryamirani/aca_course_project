@@ -82,3 +82,54 @@ MPKI = conditional-branch mispredictions per 1000 instructions (trace-driven, 20
 | 9 | 9.00 | 5.76 |
 | 11 | 10.00 | 5.73 |
 | 13 | 11.00 | 5.73 |
+
+## Baseline IPC (ChampSim)
+
+| trace | bimodal | gshare | TAGE | TAGE vs gshare |
+|---|---|---|---|---|
+| perlbench | 2.124 | 2.139 | 2.156 | +0.8% |
+| gcc | 0.478 | 0.571 | 0.571 | +0.1% |
+| mcf | 0.290 | 0.305 | 0.293 | -3.9% |
+| xalancbmk | 1.120 | 1.120 | 1.164 | +3.9% |
+| x264 | 2.359 | 2.499 | 2.546 | +1.9% |
+| deepsjeng | 1.365 | 1.420 | 1.576 | +11.0% |
+| leela | 1.358 | 1.416 | 1.573 | +11.1% |
+| xz | 1.750 | 1.719 | 1.891 | +10.0% |
+| **geomean** | **1.123** | **1.174** | **1.223** | **+4.2%** |
+
+## Storage budget (geomean IPC)
+
+| predictor | storage KB | geomean IPC |
+|---|---|---|
+| bimodal | 2.00 | 1.120 |
+| bimodal | 4.00 | 1.121 |
+| bimodal | 8.00 | 1.121 |
+| bimodal | 16.00 | 1.121 |
+| bimodal | 32.00 | 1.121 |
+| bimodal | 64.00 | 1.121 |
+| gshare | 2.00 | 1.169 |
+| gshare | 4.00 | 1.182 |
+| gshare | 8.00 | 1.192 |
+| gshare | 16.00 | 1.198 |
+| gshare | 32.00 | 1.204 |
+| gshare | 64.00 | 1.207 |
+| TAGE | 2.25 | 1.211 |
+| TAGE | 4.50 | 1.219 |
+| TAGE | 9.00 | 1.223 |
+| TAGE | 18.00 | 1.229 |
+| TAGE | 36.00 | 1.232 |
+| TAGE | 72.00 | 1.235 |
+
+## IPC sensitivity to MPKI (ChampSim, least-squares slope per trace)
+
+| trace | runs | IPC at lowest MPKI | IPC at highest MPKI | dIPC/dMPKI |
+|---|---|---|---|---|
+| perlbench | 45 | 2.161 | 2.089 | -0.0222 |
+| gcc | 45 | 0.572 | 0.478 | -0.0077 |
+| mcf | 45 | 0.293 | 0.290 | -0.0004 |
+| xalancbmk | 45 | 1.180 | 1.117 | -0.0380 |
+| x264 | 45 | 2.548 | 2.356 | -0.0406 |
+| deepsjeng | 45 | 1.608 | 1.365 | -0.0280 |
+| leela | 45 | 1.622 | 1.358 | -0.0301 |
+| xz | 45 | 1.923 | 1.719 | -0.0370 |
+
