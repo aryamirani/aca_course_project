@@ -1,0 +1,20 @@
+360 driver runs
+[20/360] tage 623.xalancbmk_s-700B mpki=0.7917
+[40/360] tage_lt9 657.xz_s-3167B mpki=6.8114
+[60/360] tage_lt13 623.xalancbmk_s-700B mpki=0.7388
+[80/360] bimodal_l13 657.xz_s-3167B mpki=10.7892
+[100/360] gshare_l15 623.xalancbmk_s-700B mpki=2.5692
+[120/360] gshare_l16 657.xz_s-3167B mpki=9.9288
+[140/360] bimodal_l17 623.xalancbmk_s-700B mpki=6.2372
+[160/360] bimodal_l18 657.xz_s-3167B mpki=10.7762
+[180/360] tage_n3 623.xalancbmk_s-700B mpki=0.8171
+[200/360] tage_n8 657.xz_s-3167B mpki=5.5357
+[220/360] tage_16k_n4 623.xalancbmk_s-700B mpki=0.7622
+[240/360] tage_16k_n16 657.xz_s-3167B mpki=5.6380
+[260/360] tage_lmax64 623.xalancbmk_s-700B mpki=0.8295
+[280/360] tage_lmax512 657.xz_s-3167B mpki=6.2732
+[300/360] tage_lmin10 623.xalancbmk_s-700B mpki=0.7747
+[320/360] tage_linear 657.xz_s-3167B mpki=6.5072
+[340/360] tage_tag8 623.xalancbmk_s-700B mpki=0.8137
+[360/360] tage_tag13 657.xz_s-3167B mpki=6.1463
+wrote 360 rows to /home2/arya.mirani/aca_tage/results/mpki.csv

@@ -1,0 +1,1108 @@
+Downloading vcpkg-glibc...
+vcpkg package management program version 2025-12-16-44bb3ce006467fc13ba37ca099f64077b8bbf84d
+
+See LICENSE.txt for license information.
+A suitable version of cmake was not found (required v3.31.10).
+Extracting cmake...
+Detecting compiler hash for triplet x64-linux...
+Compiler found: /usr/bin/c++
+The following packages will be built and installed:
+    bzip2[core,tool]:x64-linux@1.0.8#6
+    catch2:x64-linux@3.12.0
+    cli11:x64-linux@2.6.1
+    fmt:x64-linux@12.1.0
+    liblzma:x64-linux@5.8.2
+    nlohmann-json:x64-linux@3.12.0#2
+  * vcpkg-cmake:x64-linux@2024-04-23
+  * vcpkg-cmake-config:x64-linux@2024-05-23
+    zlib:x64-linux@1.3.1
+Additional packages (*) will be modified to complete this operation.
+Restored 0 package(s) from /home2/arya.mirani/.cache/vcpkg/archives in 480 us. Use --debug to see more details.
+Installing 1/9 vcpkg-cmake:x64-linux@2024-04-23...
+Building vcpkg-cmake:x64-linux@2024-04-23...
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg-port-config.cmake
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/copyright
+-- Performing post-build validation
+Starting submission of vcpkg-cmake:x64-linux@2024-04-23 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-cmake:x64-linux: 65.1 ms
+vcpkg-cmake:x64-linux package ABI: f0a0a6d4f482b84962c887dcd6d52539d02bf2fc927cee40873c5fcf5c89a746
+Installing 2/9 bzip2[core,tool]:x64-linux@1.0.8#6...
+Building bzip2[core,tool]:x64-linux@1.0.8#6...
+-- Using cached bzip2-1.0.8.tar.gz
+-- Extracting source /home2/arya.mirani/aca_tage/ChampSim/vcpkg/downloads/bzip2-1.0.8.tar.gz
+-- Applying patch fix-import-export-macros.patch
+-- Using source at /home2/arya.mirani/aca_tage/ChampSim/vcpkg/buildtrees/bzip2/src/bzip2-1-336d4794a3.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/bzip2_x64-linux/lib/pkgconfig/bzip2.pc
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/bzip2_x64-linux/debug/lib/pkgconfig/bzip2.pc
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/bzip2_x64-linux/share/bzip2/copyright
+Downloading https://github.com/NixOS/patchelf/releases/download/0.15.5/patchelf-0.15.5-x86_64.tar.gz -> patchelf-0.15.5-x86_64.tar.gz
+Successfully downloaded patchelf-0.15.5-x86_64.tar.gz
+-- Adjusted RPATH of '/home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/bzip2_x64-linux/tools/bzip2/bzip2' (From '' -> To '$ORIGIN:$ORIGIN/../../lib')
+-- Adjusted RPATH of '/home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/bzip2_x64-linux/tools/bzip2/bzip2recover' (From '' -> To '$ORIGIN:$ORIGIN/../../lib')
+-- Performing post-build validation
+Starting submission of bzip2[core,tool]:x64-linux@1.0.8#6 to 1 binary cache(s) in the background
+Elapsed time to handle bzip2:x64-linux: 2.5 min
+bzip2:x64-linux package ABI: 5b5bd81ba04abb2c6b87f6544a9755d369e113a486b4f38c0dcbca52bf09fdae
+Completed submission of vcpkg-cmake:x64-linux@2024-04-23 to 1 binary cache(s) in 14.6 ms
+Installing 3/9 vcpkg-cmake-config:x64-linux@2024-05-23...
+Building vcpkg-cmake-config:x64-linux@2024-05-23...
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/vcpkg_cmake_config_fixup.cmake
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/vcpkg-port-config.cmake
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/copyright
+-- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+Starting submission of vcpkg-cmake-config:x64-linux@2024-05-23 to 1 binary cache(s) in the background
+Elapsed time to handle vcpkg-cmake-config:x64-linux: 86.2 ms
+vcpkg-cmake-config:x64-linux package ABI: f69d8677037b6be0bd0ab1fd589007bb5b6f630107e75f8c2b24929aa7c3590d
+Completed submission of bzip2[core,tool]:x64-linux@1.0.8#6 to 1 binary cache(s) in 56.4 ms
+Installing 4/9 catch2:x64-linux@3.12.0...
+Building catch2:x64-linux@3.12.0...
+-- Using cached catchorg-Catch2-v3.12.0.tar.gz
+-- Extracting source /home2/arya.mirani/aca_tage/ChampSim/vcpkg/downloads/catchorg-Catch2-v3.12.0.tar.gz
+-- Applying patch fix-install-path.patch
+-- Using source at /home2/arya.mirani/aca_tage/ChampSim/vcpkg/buildtrees/catch2/src/v3.12.0-90989f5666.clean
+-- Configuring x64-linux
+CMake Warning at /home2/arya.mirani/aca_tage/ChampSim/vcpkg_installed/x64-linux/share/vcpkg-cmake/vcpkg_cmake_configure.cmake:344 (message):
+  The following variables are not used in CMakeLists.txt:
+
+      CATCH_CONFIG_EXPERIMENTAL_THREAD_SAFE_ASSERTIONS
+
+  Please recheck them and remove the unnecessary options from the
+  `vcpkg_cmake_configure` call.
+
+  If these options should still be passed for whatever reason, please use the
+  `MAYBE_UNUSED_VARIABLES` argument.
+Call Stack (most recent call first):
+  ports/catch2/portfile.cmake:20 (vcpkg_cmake_configure)
+  scripts/ports.cmake:206 (include)
+
+
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/catch2_x64-linux/lib/pkgconfig/catch2-with-main.pc
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/catch2_x64-linux/lib/pkgconfig/catch2.pc
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/catch2_x64-linux/debug/lib/pkgconfig/catch2-with-main.pc
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/catch2_x64-linux/debug/lib/pkgconfig/catch2.pc
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/catch2_x64-linux/share/catch2/copyright
+-- Performing post-build validation
+Starting submission of catch2:x64-linux@3.12.0 to 1 binary cache(s) in the background
+Elapsed time to handle catch2:x64-linux: 32 s
+catch2:x64-linux package ABI: 32082c12ac267a5ec4ace1b010c53aca37e02883b3baed5e2721985a373b0167
+Completed submission of vcpkg-cmake-config:x64-linux@2024-05-23 to 1 binary cache(s) in 10 ms
+Installing 5/9 cli11:x64-linux@2.6.1...
+Building cli11:x64-linux@2.6.1...
+-- Using cached CLIUtils-CLI11-v2.6.1.tar.gz
+-- Extracting source /home2/arya.mirani/aca_tage/ChampSim/vcpkg/downloads/CLIUtils-CLI11-v2.6.1.tar.gz
+-- Applying patch revert-1012-pkgconfig.diff
+-- Using source at /home2/arya.mirani/aca_tage/ChampSim/vcpkg/buildtrees/cli11/src/v2.6.1-a1ae4f2f4e.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/cli11_x64-linux/lib/pkgconfig/CLI11.pc
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/cli11_x64-linux/debug/lib/pkgconfig/CLI11.pc
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/cli11_x64-linux/share/cli11/copyright
+-- Performing post-build validation
+Starting submission of cli11:x64-linux@2.6.1 to 1 binary cache(s) in the background
+Elapsed time to handle cli11:x64-linux: 22 s
+cli11:x64-linux package ABI: 7a5bfba770def199c92a3129b3e1d5b5c878008db39b0833bd8beaab9002644f
+Completed submission of catch2:x64-linux@3.12.0 to 1 binary cache(s) in 1.9 s
+Installing 6/9 fmt:x64-linux@12.1.0...
+Building fmt:x64-linux@12.1.0...
+-- Using cached fmtlib-fmt-12.1.0.tar.gz
+-- Extracting source /home2/arya.mirani/aca_tage/ChampSim/vcpkg/downloads/fmtlib-fmt-12.1.0.tar.gz
+-- Using source at /home2/arya.mirani/aca_tage/ChampSim/vcpkg/buildtrees/fmt/src/12.1.0-54f1f91231.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/fmt_x64-linux/lib/pkgconfig/fmt.pc
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/fmt_x64-linux/debug/lib/pkgconfig/fmt.pc
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/fmt_x64-linux/share/fmt/usage
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/fmt_x64-linux/share/fmt/copyright
+-- Performing post-build validation
+Starting submission of fmt:x64-linux@12.1.0 to 1 binary cache(s) in the background
+Elapsed time to handle fmt:x64-linux: 7.5 s
+fmt:x64-linux package ABI: 96de076787c290123faf53d0157fb5763ed27943683d0c06dc7eae1a2090bb0d
+Completed submission of cli11:x64-linux@2.6.1 to 1 binary cache(s) in 339 ms
+Installing 7/9 liblzma:x64-linux@5.8.2...
+Building liblzma:x64-linux@5.8.2...
+-- Using cached tukaani-project-xz-v5.8.2.tar.gz
+-- Extracting source /home2/arya.mirani/aca_tage/ChampSim/vcpkg/downloads/tukaani-project-xz-v5.8.2.tar.gz
+-- Applying patch build-tools.patch
+-- Using source at /home2/arya.mirani/aca_tage/ChampSim/vcpkg/buildtrees/liblzma/src/v5.8.2-30365c07c3.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/liblzma_x64-linux/lib/pkgconfig/liblzma.pc
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/liblzma_x64-linux/debug/lib/pkgconfig/liblzma.pc
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/liblzma_x64-linux/share/liblzma/copyright
+-- Performing post-build validation
+Starting submission of liblzma:x64-linux@5.8.2 to 1 binary cache(s) in the background
+Elapsed time to handle liblzma:x64-linux: 13 s
+liblzma:x64-linux package ABI: b54c8640ba0ca0fc57fd5c8d494377e407bf953b4315a8ff5d2656ea91e66319
+Completed submission of fmt:x64-linux@12.1.0 to 1 binary cache(s) in 144 ms
+Installing 8/9 nlohmann-json:x64-linux@3.12.0#2...
+Building nlohmann-json:x64-linux@3.12.0#2...
+-- Using cached nlohmann-json-v3.12.0.tar.gz
+-- Extracting source /home2/arya.mirani/aca_tage/ChampSim/vcpkg/downloads/nlohmann-json-v3.12.0.tar.gz
+-- Applying patch fix-4736_char8_t.patch
+-- Applying patch fix-4742_std_optional.patch
+-- Using source at /home2/arya.mirani/aca_tage/ChampSim/vcpkg/buildtrees/nlohmann-json/src/v3.12.0-89fed620e6.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/nlohmann-json_x64-linux/share/pkgconfig/nlohmann_json.pc
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/nlohmann-json_x64-linux/debug/share/pkgconfig/nlohmann_json.pc
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/nlohmann-json_x64-linux/share/nlohmann-json/copyright
+-- Performing post-build validation
+Starting submission of nlohmann-json:x64-linux@3.12.0#2 to 1 binary cache(s) in the background
+Elapsed time to handle nlohmann-json:x64-linux: 2.7 s
+nlohmann-json:x64-linux package ABI: 6c1a241233c4ae0a7c11c4dd24dadd2ad12b61ed07f857368f55855438f490b6
+Completed submission of liblzma:x64-linux@5.8.2 to 1 binary cache(s) in 192 ms
+Installing 9/9 zlib:x64-linux@1.3.1...
+Building zlib:x64-linux@1.3.1...
+-- Using cached madler-zlib-v1.3.1.tar.gz
+-- Extracting source /home2/arya.mirani/aca_tage/ChampSim/vcpkg/downloads/madler-zlib-v1.3.1.tar.gz
+-- Applying patch 0001-Prevent-invalid-inclusions-when-HAVE_-is-set-to-0.patch
+-- Applying patch 0002-build-static-or-shared-not-both.patch
+-- Applying patch 0003-android-and-mingw-fixes.patch
+-- Using source at /home2/arya.mirani/aca_tage/ChampSim/vcpkg/buildtrees/zlib/src/v1.3.1-2e5db616bf.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/zlib_x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/zlib_x64-linux/lib/pkgconfig/zlib.pc
+-- Fixing pkgconfig file: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/zlib_x64-linux/debug/lib/pkgconfig/zlib.pc
+-- Installing: /home2/arya.mirani/aca_tage/ChampSim/vcpkg/packages/zlib_x64-linux/share/zlib/copyright
+-- Performing post-build validation
+Starting submission of zlib:x64-linux@1.3.1 to 1 binary cache(s) in the background
+Elapsed time to handle zlib:x64-linux: 2.7 s
+zlib:x64-linux package ABI: 32335eb6f7a63dcaec1c28958ab22987c68e7dc3db074851536e27b94c3ba963
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Some packages did not declare an SPDX license. Check the `copyright` file for each package for more information about their licensing.
+Packages installed in this vcpkg installation declare the following licenses:
+BSD-3-Clause
+BSL-1.0
+MIT
+Zlib
+bzip2-1.0.6
+The package bzip2 is compatible with built-in CMake targets:
+
+    find_package(BZip2 REQUIRED)
+    target_link_libraries(main PRIVATE BZip2::BZip2)
+
+catch2 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(Catch2 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Catch2::Catch2 Catch2::Catch2WithMain)
+
+catch2 provides pkg-config modules:
+
+  # A modern, C++-native test framework for C++14 and above (links in default main)
+  catch2-with-main
+
+  # A modern, C++-native, test framework for C++14 and above
+  catch2
+
+cli11 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(CLI11 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE CLI11::CLI11)
+
+cli11 provides pkg-config modules:
+
+  # C++ command line parser
+  CLI11
+
+The package fmt provides CMake targets:
+
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt)
+
+    # Or use the header-only version
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt-header-only)
+
+liblzma is compatible with built-in CMake targets:
+
+    find_package(LibLZMA REQUIRED)
+    target_link_libraries(main PRIVATE LibLZMA::LibLZMA)
+
+liblzma provides CMake targets:
+
+    find_package(liblzma CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE liblzma::liblzma)
+
+The package nlohmann-json provides CMake targets:
+
+    find_package(nlohmann_json CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE nlohmann_json::nlohmann_json)
+
+The package nlohmann-json can be configured to not provide implicit conversions via a custom triplet file:
+
+    set(nlohmann-json_IMPLICIT_CONVERSIONS OFF)
+
+For more information, see the docs here:
+    
+    https://json.nlohmann.me/api/macros/json_use_implicit_conversions/
+
+The package zlib is compatible with built-in CMake targets:
+
+    find_package(ZLIB REQUIRED)
+    target_link_libraries(main PRIVATE ZLIB::ZLIB)
+
+Completed submission of nlohmann-json:x64-linux@3.12.0#2 to 1 binary cache(s) in 85.3 ms
+Waiting for 1 remaining binary cache submissions...
+Completed submission of zlib:x64-linux@1.3.1 to 1 binary cache(s) in 53.5 ms (1/1)
+All requested installations completed successfully in: 3.8 min
+Building .csconfig/module_decl.inc with modules 
+Building .csconfig/legacy_bridge.h with modules 
+mkdir .csconfig/modules/
+mkdir .csconfig/test/
+mkdir -p .csconfig/modules/replacement/srrip/
+mkdir -p .csconfig/modules/replacement/ship/
+mkdir -p .csconfig/modules/replacement/random/
+mkdir -p .csconfig/modules/replacement/lru/
+mkdir -p .csconfig/modules/replacement/drrip/
+mkdir -p .csconfig/modules/prefetcher/va_ampm_lite/
+mkdir -p .csconfig/modules/prefetcher/spp_dev/
+mkdir -p .csconfig/modules/prefetcher/no/
+mkdir -p .csconfig/modules/prefetcher/next_line/
+mkdir -p .csconfig/modules/prefetcher/ip_stride/
+mkdir -p .csconfig/modules/btb/basic_btb/
+mkdir -p .csconfig/modules/branch/tage/
+mkdir -p .csconfig/modules/branch/perceptron/
+mkdir -p .csconfig/modules/branch/hashed_perceptron/
+mkdir -p .csconfig/modules/branch/gshare_param/
+mkdir -p .csconfig/modules/branch/gshare/
+mkdir -p .csconfig/modules/branch/bimodal_param/
+mkdir -p .csconfig/modules/branch/bimodal/
+g++ @global.options @absolute.options -MM -MT .csconfig/test/instr.d -MT .csconfig/test/instr.o -I.csconfig -MF .csconfig/test/instr.d test/cpp/src/instr.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/900-btb-bounds-check.d -MT .csconfig/test/900-btb-bounds-check.o -I.csconfig -MF .csconfig/test/900-btb-bounds-check.d test/cpp/src/900-btb-bounds-check.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/803-vmem-offset.d -MT .csconfig/test/803-vmem-offset.o -I.csconfig -MF .csconfig/test/803-vmem-offset.d test/cpp/src/803-vmem-offset.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/802-pte-page.d -MT .csconfig/test/802-pte-page.o -I.csconfig -MF .csconfig/test/802-pte-page.d test/cpp/src/802-pte-page.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/801-vmem-duplicated.d -MT .csconfig/test/801-vmem-duplicated.o -I.csconfig -MF .csconfig/test/801-vmem-duplicated.d test/cpp/src/801-vmem-duplicated.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/798-dram-plain-printer.d -MT .csconfig/test/798-dram-plain-printer.o -I.csconfig -MF .csconfig/test/798-dram-plain-printer.d test/cpp/src/798-dram-plain-printer.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/751-channel-bit-select.d -MT .csconfig/test/751-channel-bit-select.o -I.csconfig -MF .csconfig/test/751-channel-bit-select.d test/cpp/src/751-channel-bit-select.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/750-channel-dimensions.d -MT .csconfig/test/750-channel-dimensions.o -I.csconfig -MF .csconfig/test/750-channel-dimensions.d test/cpp/src/750-channel-dimensions.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/702-dram-refresh.d -MT .csconfig/test/702-dram-refresh.o -I.csconfig -MF .csconfig/test/702-dram-refresh.d test/cpp/src/702-dram-refresh.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/701-dram-scheduler.d -MT .csconfig/test/701-dram-scheduler.o -I.csconfig -MF .csconfig/test/701-dram-scheduler.d test/cpp/src/701-dram-scheduler.cc
+test/cpp/src/803-vmem-offset.cc:3:10: fatal error: dram_controller.h: No such file or directory
+    3 | #include "dram_controller.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/801-vmem-duplicated.cc:3:10: fatal error: dram_controller.h: No such file or directory
+    3 | #include "dram_controller.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from test/cpp/src/instr.cc:1:
+test/cpp/src/instr.h:4:10: fatal error: instruction.h: No such file or directory
+    4 | #include "instruction.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/700-dram-size.d -MT .csconfig/test/700-dram-size.o -I.csconfig -MF .csconfig/test/700-dram-size.d test/cpp/src/700-dram-size.cc
+test/cpp/src/798-dram-plain-printer.cc:3:10: fatal error: dram_stats.h: No such file or directory
+    3 | #include "dram_stats.h"
+      |          ^~~~~~~~~~~~~~
+g++ @global.options @absolute.options -MM -MT .csconfig/test/603-pte-page-correctness.d -MT .csconfig/test/603-pte-page-correctness.o -I.csconfig -MF .csconfig/test/603-pte-page-correctness.d test/cpp/src/603-pte-page-correctness.cc
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/602-walk-latency.d -MT .csconfig/test/602-walk-latency.o -I.csconfig -MF .csconfig/test/602-walk-latency.d test/cpp/src/602-walk-latency.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/601-multiple-inflight-walks.d -MT .csconfig/test/601-multiple-inflight-walks.o -I.csconfig -MF .csconfig/test/601-multiple-inflight-walks.d test/cpp/src/601-multiple-inflight-walks.cc
+test/cpp/src/750-channel-dimensions.cc:3:10: fatal error: dram_controller.h: No such file or directory
+    3 | #include "dram_controller.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/600-ptw-path.d -MT .csconfig/test/600-ptw-path.o -I.csconfig -MF .csconfig/test/600-ptw-path.d test/cpp/src/600-ptw-path.cc
+test/cpp/src/751-channel-bit-select.cc:4:10: fatal error: dram_controller.h: No such file or directory
+    4 | #include "dram_controller.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/500-environment.d -MT .csconfig/test/500-environment.o -I.csconfig -MF .csconfig/test/500-environment.d test/cpp/src/500-environment.cc
+test/cpp/src/700-dram-size.cc:3:10: fatal error: defaults.hpp: No such file or directory
+    3 | #include "defaults.hpp"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/602-walk-latency.cc:3:10: fatal error: defaults.hpp: No such file or directory
+    3 | #include "defaults.hpp"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/498-cache-plain-printer.d -MT .csconfig/test/498-cache-plain-printer.o -I.csconfig -MF .csconfig/test/498-cache-plain-printer.d test/cpp/src/498-cache-plain-printer.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/453-va-ampm-lite-behavior.d -MT .csconfig/test/453-va-ampm-lite-behavior.o -I.csconfig -MF .csconfig/test/453-va-ampm-lite-behavior.d test/cpp/src/453-va-ampm-lite-behavior.cc
+test/cpp/src/500-environment.cc:3:10: fatal error: environment.h: No such file or directory
+    3 | #include "environment.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/452-ip-stride-behavior.d -MT .csconfig/test/452-ip-stride-behavior.o -I.csconfig -MF .csconfig/test/452-ip-stride-behavior.d test/cpp/src/452-ip-stride-behavior.cc
+test/cpp/src/498-cache-plain-printer.cc:3:10: fatal error: cache_stats.h: No such file or directory
+    3 | #include "cache_stats.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/603-pte-page-correctness.cc:4:10: fatal error: defaults.hpp: No such file or directory
+    4 | #include "defaults.hpp"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/451-next-line-behavior.d -MT .csconfig/test/451-next-line-behavior.o -I.csconfig -MF .csconfig/test/451-next-line-behavior.d test/cpp/src/451-next-line-behavior.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/445-ship-replacement.d -MT .csconfig/test/445-ship-replacement.o -I.csconfig -MF .csconfig/test/445-ship-replacement.d test/cpp/src/445-ship-replacement.cc
+test/cpp/src/601-multiple-inflight-walks.cc:4:10: fatal error: defaults.hpp: No such file or directory
+    4 | #include "defaults.hpp"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/444-srrip-replacement.d -MT .csconfig/test/444-srrip-replacement.o -I.csconfig -MF .csconfig/test/444-srrip-replacement.d test/cpp/src/444-srrip-replacement.cc
+test/cpp/src/600-ptw-path.cc:4:10: fatal error: defaults.hpp: No such file or directory
+    4 | #include "defaults.hpp"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/443-replacement-interface-selection.d -MT .csconfig/test/443-replacement-interface-selection.o -I.csconfig -MF .csconfig/test/443-replacement-interface-selection.d test/cpp/src/443-replacement-interface-selection.cc
+test/cpp/src/802-pte-page.cc:4:10: fatal error: dram_controller.h: No such file or directory
+    4 | #include "dram_controller.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/442-replacement-interface.d -MT .csconfig/test/442-replacement-interface.o -I.csconfig -MF .csconfig/test/442-replacement-interface.d test/cpp/src/442-replacement-interface.cc
+In file included from test/cpp/src/451-next-line-behavior.cc:3:
+test/cpp/src/../../../prefetcher/next_line/next_line.h:6:10: fatal error: address.h: No such file or directory
+    6 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/441-replacement-bypass.d -MT .csconfig/test/441-replacement-bypass.o -I.csconfig -MF .csconfig/test/441-replacement-bypass.d test/cpp/src/441-replacement-bypass.cc
+In file included from test/cpp/src/900-btb-bounds-check.cc:3:
+test/cpp/src/mocks.hpp:8:10: fatal error: cache.h: No such file or directory
+    8 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/432-prefetch-metadata.d -MT .csconfig/test/432-prefetch-metadata.o -I.csconfig -MF .csconfig/test/432-prefetch-metadata.d test/cpp/src/432-prefetch-metadata.cc
+In file included from test/cpp/src/444-srrip-replacement.cc:3:
+.csconfig/../replacement/srrip/srrip.h:7:10: fatal error: cache.h: No such file or directory
+    7 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+test/cpp/src/441-replacement-bypass.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/431-merge-prefetch.d -MT .csconfig/test/431-merge-prefetch.o -I.csconfig -MF .csconfig/test/431-merge-prefetch.d test/cpp/src/431-merge-prefetch.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/430-prefetcher-interface.d -MT .csconfig/test/430-prefetcher-interface.o -I.csconfig -MF .csconfig/test/430-prefetcher-interface.d test/cpp/src/430-prefetcher-interface.cc
+In file included from test/cpp/src/445-ship-replacement.cc:3:
+.csconfig/../replacement/ship/ship.h:7:10: fatal error: cache.h: No such file or directory
+    7 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/426-internal-pq-size.d -MT .csconfig/test/426-internal-pq-size.o -I.csconfig -MF .csconfig/test/426-internal-pq-size.d test/cpp/src/426-internal-pq-size.cc
+test/cpp/src/701-dram-scheduler.cc:6:10: fatal error: defaults.hpp: No such file or directory
+    6 | #include "defaults.hpp"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/425-useless-prefetch.d -MT .csconfig/test/425-useless-prefetch.o -I.csconfig -MF .csconfig/test/425-useless-prefetch.d test/cpp/src/425-useless-prefetch.cc
+test/cpp/src/702-dram-refresh.cc:7:10: fatal error: defaults.hpp: No such file or directory
+    7 | #include "defaults.hpp"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/424-duplicate-prefetch.d -MT .csconfig/test/424-duplicate-prefetch.o -I.csconfig -MF .csconfig/test/424-duplicate-prefetch.d test/cpp/src/424-duplicate-prefetch.cc
+test/cpp/src/431-merge-prefetch.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/423-prefetcher-activate.d -MT .csconfig/test/423-prefetcher-activate.o -I.csconfig -MF .csconfig/test/423-prefetcher-activate.d test/cpp/src/423-prefetcher-activate.cc
+In file included from test/cpp/src/453-va-ampm-lite-behavior.cc:4:
+test/cpp/src/../../../prefetcher/va_ampm_lite/va_ampm_lite.h:9:10: fatal error: champsim.h: No such file or directory
+    9 | #include "champsim.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/443-replacement-interface-selection.cc:5:10: fatal error: cache.h: No such file or directory
+    5 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+test/cpp/src/426-internal-pq-size.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/422-prefetch-hit.d -MT .csconfig/test/422-prefetch-hit.o -I.csconfig -MF .csconfig/test/422-prefetch-hit.d test/cpp/src/422-prefetch-hit.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/421-prefetch-fill-level.d -MT .csconfig/test/421-prefetch-fill-level.o -I.csconfig -MF .csconfig/test/421-prefetch-fill-level.d test/cpp/src/421-prefetch-fill-level.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/420-issue-prefetch.d -MT .csconfig/test/420-issue-prefetch.o -I.csconfig -MF .csconfig/test/420-issue-prefetch.d test/cpp/src/420-issue-prefetch.cc
+test/cpp/src/424-duplicate-prefetch.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/415-translation-collision.d -MT .csconfig/test/415-translation-collision.o -I.csconfig -MF .csconfig/test/415-translation-collision.d test/cpp/src/415-translation-collision.cc
+test/cpp/src/442-replacement-interface.cc:5:10: fatal error: cache.h: No such file or directory
+    5 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+In file included from test/cpp/src/452-ip-stride-behavior.cc:5:
+test/cpp/src/../../../prefetcher/ip_stride/ip_stride.h:7:10: fatal error: address.h: No such file or directory
+    7 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/414-tag-check-bound.d -MT .csconfig/test/414-tag-check-bound.o -I.csconfig -MF .csconfig/test/414-tag-check-bound.d test/cpp/src/414-tag-check-bound.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/413-hit-under-miss.d -MT .csconfig/test/413-hit-under-miss.o -I.csconfig -MF .csconfig/test/413-hit-under-miss.d test/cpp/src/413-hit-under-miss.cc
+test/cpp/src/425-useless-prefetch.cc:4:10: fatal error: cache.h: No such file or directory
+    4 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+test/cpp/src/422-prefetch-hit.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/412-queue-translation-miss.d -MT .csconfig/test/412-queue-translation-miss.o -I.csconfig -MF .csconfig/test/412-queue-translation-miss.d test/cpp/src/412-queue-translation-miss.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/411-queue-translation-hit.d -MT .csconfig/test/411-queue-translation-hit.o -I.csconfig -MF .csconfig/test/411-queue-translation-hit.d test/cpp/src/411-queue-translation-hit.cc
+test/cpp/src/432-prefetch-metadata.cc:5:10: fatal error: cache.h: No such file or directory
+    5 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+test/cpp/src/421-prefetch-fill-level.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/408-set-independence.d -MT .csconfig/test/408-set-independence.o -I.csconfig -MF .csconfig/test/408-set-independence.d test/cpp/src/408-set-independence.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/407-writeback-dirty.d -MT .csconfig/test/407-writeback-dirty.o -I.csconfig -MF .csconfig/test/407-writeback-dirty.d test/cpp/src/407-writeback-dirty.cc
+test/cpp/src/415-translation-collision.cc:3:10: fatal error: channel.h: No such file or directory
+    3 | #include "channel.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/406-mshr-merge.d -MT .csconfig/test/406-mshr-merge.o -I.csconfig -MF .csconfig/test/406-mshr-merge.d test/cpp/src/406-mshr-merge.cc
+test/cpp/src/414-tag-check-bound.cc:3:10: fatal error: defaults.hpp: No such file or directory
+    3 | #include "defaults.hpp"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/412-queue-translation-miss.cc:3:10: fatal error: channel.h: No such file or directory
+    3 | #include "channel.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/405-fill-eviction.d -MT .csconfig/test/405-fill-eviction.o -I.csconfig -MF .csconfig/test/405-fill-eviction.d test/cpp/src/405-fill-eviction.cc
+test/cpp/src/411-queue-translation-hit.cc:3:10: fatal error: channel.h: No such file or directory
+    3 | #include "channel.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+test/cpp/src/408-set-independence.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/404-fill-bandwidth.d -MT .csconfig/test/404-fill-bandwidth.o -I.csconfig -MF .csconfig/test/404-fill-bandwidth.d test/cpp/src/404-fill-bandwidth.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/403-read-bandwidth.d -MT .csconfig/test/403-read-bandwidth.o -I.csconfig -MF .csconfig/test/403-read-bandwidth.d test/cpp/src/403-read-bandwidth.cc
+test/cpp/src/413-hit-under-miss.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+test/cpp/src/407-writeback-dirty.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/402-miss-latency.d -MT .csconfig/test/402-miss-latency.o -I.csconfig -MF .csconfig/test/402-miss-latency.d test/cpp/src/402-miss-latency.cc
+test/cpp/src/430-prefetcher-interface.cc:4:10: fatal error: cache.h: No such file or directory
+    4 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/401-hit-latency.d -MT .csconfig/test/401-hit-latency.o -I.csconfig -MF .csconfig/test/401-hit-latency.d test/cpp/src/401-hit-latency.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/400-cache-occupancy-size.d -MT .csconfig/test/400-cache-occupancy-size.o -I.csconfig -MF .csconfig/test/400-cache-occupancy-size.d test/cpp/src/400-cache-occupancy-size.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/300-retire-from-rob.d -MT .csconfig/test/300-retire-from-rob.o -I.csconfig -MF .csconfig/test/300-retire-from-rob.d test/cpp/src/300-retire-from-rob.cc
+test/cpp/src/423-prefetcher-activate.cc:5:10: fatal error: cache.h: No such file or directory
+    5 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/250-load-scheduling.d -MT .csconfig/test/250-load-scheduling.o -I.csconfig -MF .csconfig/test/250-load-scheduling.d test/cpp/src/250-load-scheduling.cc
+test/cpp/src/405-fill-eviction.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+test/cpp/src/404-fill-bandwidth.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/201-register-rename.d -MT .csconfig/test/201-register-rename.o -I.csconfig -MF .csconfig/test/201-register-rename.d test/cpp/src/201-register-rename.cc
+test/cpp/src/401-hit-latency.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/200-rob-scheduling.d -MT .csconfig/test/200-rob-scheduling.o -I.csconfig -MF .csconfig/test/200-rob-scheduling.d test/cpp/src/200-rob-scheduling.cc
+test/cpp/src/403-read-bandwidth.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+test/cpp/src/400-cache-occupancy-size.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+test/cpp/src/402-miss-latency.cc:3:10: fatal error: cache.h: No such file or directory
+    3 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/198-core-plain-printer.d -MT .csconfig/test/198-core-plain-printer.o -I.csconfig -MF .csconfig/test/198-core-plain-printer.d test/cpp/src/198-core-plain-printer.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/174-hashed-perceptron-ghist.d -MT .csconfig/test/174-hashed-perceptron-ghist.o -I.csconfig -MF .csconfig/test/174-hashed-perceptron-ghist.d test/cpp/src/174-hashed-perceptron-ghist.cc
+test/cpp/src/420-issue-prefetch.cc:5:10: fatal error: cache.h: No such file or directory
+    5 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/171-bimodal-branch-predictor.d -MT .csconfig/test/171-bimodal-branch-predictor.o -I.csconfig -MF .csconfig/test/171-bimodal-branch-predictor.d test/cpp/src/171-bimodal-branch-predictor.cc
+In file included from test/cpp/src/250-load-scheduling.cc:3:
+test/cpp/src/instr.h:4:10: fatal error: instruction.h: No such file or directory
+    4 | #include "instruction.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/166-issue296-basic-btb-no-mispredict-on-not-taken.d -MT .csconfig/test/166-issue296-basic-btb-no-mispredict-on-not-taken.o -I.csconfig -MF .csconfig/test/166-issue296-basic-btb-no-mispredict-on-not-taken.d test/cpp/src/166-issue296-basic-btb-no-mispredict-on-not-taken.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/165-basic-btb-no-evict-on-unknown-target.d -MT .csconfig/test/165-basic-btb-no-evict-on-unknown-target.o -I.csconfig -MF .csconfig/test/165-basic-btb-no-evict-on-unknown-target.d test/cpp/src/165-basic-btb-no-evict-on-unknown-target.cc
+In file included from test/cpp/src/300-retire-from-rob.cc:3:
+test/cpp/src/instr.h:4:10: fatal error: instruction.h: No such file or directory
+    4 | #include "instruction.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/406-mshr-merge.cc:4:10: fatal error: cache.h: No such file or directory
+    4 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+In file included from test/cpp/src/201-register-rename.cc:3:
+test/cpp/src/instr.h:4:10: fatal error: instruction.h: No such file or directory
+    4 | #include "instruction.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/151-fetch-across-dib-hit.d -MT .csconfig/test/151-fetch-across-dib-hit.o -I.csconfig -MF .csconfig/test/151-fetch-across-dib-hit.d test/cpp/src/151-fetch-across-dib-hit.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/150-fetch-bandwidth.d -MT .csconfig/test/150-fetch-bandwidth.o -I.csconfig -MF .csconfig/test/150-fetch-bandwidth.d test/cpp/src/150-fetch-bandwidth.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/140-single-dib-lookup.d -MT .csconfig/test/140-single-dib-lookup.o -I.csconfig -MF .csconfig/test/140-single-dib-lookup.d test/cpp/src/140-single-dib-lookup.cc
+In file included from test/cpp/src/200-rob-scheduling.cc:3:
+test/cpp/src/instr.h:4:10: fatal error: instruction.h: No such file or directory
+    4 | #include "instruction.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/198-core-plain-printer.cc:3:10: fatal error: core_stats.h: No such file or directory
+    3 | #include "core_stats.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/121-dib-inorder.d -MT .csconfig/test/121-dib-inorder.o -I.csconfig -MF .csconfig/test/121-dib-inorder.d test/cpp/src/121-dib-inorder.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/120-dib-bypass-decode.d -MT .csconfig/test/120-dib-bypass-decode.o -I.csconfig -MF .csconfig/test/120-dib-bypass-decode.d test/cpp/src/120-dib-bypass-decode.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/100-core-latency.d -MT .csconfig/test/100-core-latency.o -I.csconfig -MF .csconfig/test/100-core-latency.d test/cpp/src/100-core-latency.cc
+In file included from test/cpp/src/166-issue296-basic-btb-no-mispredict-on-not-taken.cc:3:
+test/cpp/src/../../../btb/basic_btb/basic_btb.h:4:10: fatal error: address.h: No such file or directory
+    4 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/092-ptw-builder.d -MT .csconfig/test/092-ptw-builder.o -I.csconfig -MF .csconfig/test/092-ptw-builder.d test/cpp/src/092-ptw-builder.cc
+In file included from test/cpp/src/150-fetch-bandwidth.cc:3:
+test/cpp/src/instr.h:4:10: fatal error: instruction.h: No such file or directory
+    4 | #include "instruction.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from test/cpp/src/140-single-dib-lookup.cc:3:
+test/cpp/src/instr.h:4:10: fatal error: instruction.h: No such file or directory
+    4 | #include "instruction.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/091-cache-builder.d -MT .csconfig/test/091-cache-builder.o -I.csconfig -MF .csconfig/test/091-cache-builder.d test/cpp/src/091-cache-builder.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/085-repeatable.d -MT .csconfig/test/085-repeatable.o -I.csconfig -MF .csconfig/test/085-repeatable.d test/cpp/src/085-repeatable.cc
+test/cpp/src/100-core-latency.cc:3:10: fatal error: bandwidth.h: No such file or directory
+    3 | #include "bandwidth.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/084-tracereader-eof.d -MT .csconfig/test/084-tracereader-eof.o -I.csconfig -MF .csconfig/test/084-tracereader-eof.d test/cpp/src/084-tracereader-eof.cc
+In file included from test/cpp/src/171-bimodal-branch-predictor.cc:3:
+test/cpp/src/../../../branch/bimodal/bimodal.h:6:10: fatal error: address.h: No such file or directory
+    6 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/083-decompress-stream.d -MT .csconfig/test/083-decompress-stream.o -I.csconfig -MF .csconfig/test/083-decompress-stream.d test/cpp/src/083-decompress-stream.cc
+test/cpp/src/151-fetch-across-dib-hit.cc:4:10: fatal error: defaults.hpp: No such file or directory
+    4 | #include "defaults.hpp"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+In file included from test/cpp/src/174-hashed-perceptron-ghist.cc:3:
+test/cpp/src/../../../branch/hashed_perceptron/folded_shift_register.h:6:10: fatal error: modules.h: No such file or directory
+    6 | #include "modules.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/082-branch-targets.d -MT .csconfig/test/082-branch-targets.o -I.csconfig -MF .csconfig/test/082-branch-targets.d test/cpp/src/082-branch-targets.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/081-tracereader-instr-id.d -MT .csconfig/test/081-tracereader-instr-id.o -I.csconfig -MF .csconfig/test/081-tracereader-instr-id.d test/cpp/src/081-tracereader-instr-id.cc
+test/cpp/src/085-repeatable.cc:3:10: fatal error: repeatable.h: No such file or directory
+    3 | #include "repeatable.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/080-tracereader.d -MT .csconfig/test/080-tracereader.o -I.csconfig -MF .csconfig/test/080-tracereader.d test/cpp/src/080-tracereader.cc
+test/cpp/src/084-tracereader-eof.cc:3:10: fatal error: tracereader.h: No such file or directory
+    3 | #include "tracereader.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/083-decompress-stream.cc:3:10: fatal error: inf_stream.h: No such file or directory
+    3 | #include "inf_stream.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/070-event-counter.d -MT .csconfig/test/070-event-counter.o -I.csconfig -MF .csconfig/test/070-event-counter.d test/cpp/src/070-event-counter.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/048-stat-methods.d -MT .csconfig/test/048-stat-methods.o -I.csconfig -MF .csconfig/test/048-stat-methods.d test/cpp/src/048-stat-methods.cc
+test/cpp/src/092-ptw-builder.cc:4:10: fatal error: channel.h: No such file or directory
+    4 | #include "channel.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+test/cpp/src/091-cache-builder.cc:4:10: fatal error: cache.h: No such file or directory
+    4 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/047-extent-set.d -MT .csconfig/test/047-extent-set.o -I.csconfig -MF .csconfig/test/047-extent-set.d test/cpp/src/047-extent-set.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/046-is-specialization.d -MT .csconfig/test/046-is-specialization.o -I.csconfig -MF .csconfig/test/046-is-specialization.d test/cpp/src/046-is-specialization.cc
+test/cpp/src/080-tracereader.cc:3:10: fatal error: tracereader.h: No such file or directory
+    3 | #include "tracereader.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/045-transform-while-n.d -MT .csconfig/test/045-transform-while-n.o -I.csconfig -MF .csconfig/test/045-transform-while-n.d test/cpp/src/045-transform-while-n.cc
+In file included from test/cpp/src/165-basic-btb-no-evict-on-unknown-target.cc:6:
+test/cpp/src/../../../btb/basic_btb/basic_btb.h:4:10: fatal error: address.h: No such file or directory
+    4 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/044-extract.d -MT .csconfig/test/044-extract.o -I.csconfig -MF .csconfig/test/044-extract.d test/cpp/src/044-extract.cc
+test/cpp/src/070-event-counter.cc:3:10: fatal error: event_counter.h: No such file or directory
+    3 | #include "event_counter.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/043-fwcounter.d -MT .csconfig/test/043-fwcounter.o -I.csconfig -MF .csconfig/test/043-fwcounter.d test/cpp/src/043-fwcounter.cc
+test/cpp/src/047-extent-set.cc:3:10: fatal error: extent_set.h: No such file or directory
+    3 | #include "extent_set.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/042-get-span.d -MT .csconfig/test/042-get-span.o -I.csconfig -MF .csconfig/test/042-get-span.d test/cpp/src/042-get-span.cc
+In file included from test/cpp/src/082-branch-targets.cc:5:
+test/cpp/src/instr.h:4:10: fatal error: instruction.h: No such file or directory
+    4 | #include "instruction.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/041-bitwise_ops.d -MT .csconfig/test/041-bitwise_ops.o -I.csconfig -MF .csconfig/test/041-bitwise_ops.d test/cpp/src/041-bitwise_ops.cc
+test/cpp/src/121-dib-inorder.cc:4:10: fatal error: bandwidth.h: No such file or directory
+    4 | #include "bandwidth.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/048-stat-methods.cc:3:10: fatal error: msl/stat_methods.h: No such file or directory
+    3 | #include "msl/stat_methods.h"
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/120-dib-bypass-decode.cc:4:10: fatal error: bandwidth.h: No such file or directory
+    4 | #include "bandwidth.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/043-fwcounter.cc:4:10: fatal error: msl/fwcounter.h: No such file or directory
+    4 | #include "msl/fwcounter.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/040-lru-table.d -MT .csconfig/test/040-lru-table.o -I.csconfig -MF .csconfig/test/040-lru-table.d test/cpp/src/040-lru-table.cc
+test/cpp/src/046-is-specialization.cc:5:10: fatal error: util/type_traits.h: No such file or directory
+    5 | #include "util/type_traits.h"
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/045-transform-while-n.cc:4:10: fatal error: util/algorithm.h: No such file or directory
+    4 | #include "util/algorithm.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/044-extract.cc:5:10: fatal error: util/algorithm.h: No such file or directory
+    5 | #include "util/algorithm.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/039-channel-members.d -MT .csconfig/test/039-channel-members.o -I.csconfig -MF .csconfig/test/039-channel-members.d test/cpp/src/039-channel-members.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/038-channel-occupancy-size.d -MT .csconfig/test/038-channel-occupancy-size.o -I.csconfig -MF .csconfig/test/038-channel-occupancy-size.d test/cpp/src/038-channel-occupancy-size.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/037-waitable.d -MT .csconfig/test/037-waitable.o -I.csconfig -MF .csconfig/test/037-waitable.d test/cpp/src/037-waitable.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/036-bandwidth.d -MT .csconfig/test/036-bandwidth.o -I.csconfig -MF .csconfig/test/036-bandwidth.d test/cpp/src/036-bandwidth.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/035-data-size.d -MT .csconfig/test/035-data-size.o -I.csconfig -MF .csconfig/test/035-data-size.d test/cpp/src/035-data-size.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/034-extent.d -MT .csconfig/test/034-extent.o -I.csconfig -MF .csconfig/test/034-extent.d test/cpp/src/034-extent.cc
+In file included from test/cpp/src/081-tracereader-instr-id.cc:7:
+test/cpp/src/matchers.hpp:7:10: fatal error: address.h: No such file or directory
+    7 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/033-address-arithmetic.d -MT .csconfig/test/033-address-arithmetic.o -I.csconfig -MF .csconfig/test/033-address-arithmetic.d test/cpp/src/033-address-arithmetic.cc
+test/cpp/src/042-get-span.cc:4:10: fatal error: util/span.h: No such file or directory
+    4 | #include "util/span.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/032-address-slice-dynamic.d -MT .csconfig/test/032-address-slice-dynamic.o -I.csconfig -MF .csconfig/test/032-address-slice-dynamic.d test/cpp/src/032-address-slice-dynamic.cc
+test/cpp/src/038-channel-occupancy-size.cc:3:10: fatal error: channel.h: No such file or directory
+    3 | #include "channel.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/031-address-slice.d -MT .csconfig/test/031-address-slice.o -I.csconfig -MF .csconfig/test/031-address-slice.d test/cpp/src/031-address-slice.cc
+test/cpp/src/036-bandwidth.cc:3:10: fatal error: bandwidth.h: No such file or directory
+    3 | #include "bandwidth.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/035-data-size.cc:3:10: fatal error: champsim.h: No such file or directory
+    3 | #include "champsim.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+test/cpp/src/034-extent.cc:4:10: fatal error: extent.h: No such file or directory
+    4 | #include "extent.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/030-address-ops.d -MT .csconfig/test/030-address-ops.o -I.csconfig -MF .csconfig/test/030-address-ops.d test/cpp/src/030-address-ops.cc
+test/cpp/src/033-address-arithmetic.cc:3:10: fatal error: address.h: No such file or directory
+    3 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+test/cpp/src/040-lru-table.cc:4:10: fatal error: address.h: No such file or directory
+    4 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+test/cpp/src/039-channel-members.cc:4:10: fatal error: channel.h: No such file or directory
+    4 | #include "channel.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/test/020-heartbeat-listener.d -MT .csconfig/test/020-heartbeat-listener.o -I.csconfig -MF .csconfig/test/020-heartbeat-listener.d test/cpp/src/020-heartbeat-listener.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/001-operable.d -MT .csconfig/test/001-operable.o -I.csconfig -MF .csconfig/test/001-operable.d test/cpp/src/001-operable.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/test/TEST_000-test-main.d -MT .csconfig/test/TEST_000-test-main.o -I.csconfig -MF .csconfig/test/TEST_000-test-main.d test/cpp/src/000-test-main.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/vmem.d -MT .csconfig/vmem.o -I.csconfig -MF .csconfig/vmem.d src/vmem.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/tracereader.d -MT .csconfig/tracereader.o -I.csconfig -MF .csconfig/tracereader.d src/tracereader.cc
+test/cpp/src/032-address-slice-dynamic.cc:5:10: fatal error: address.h: No such file or directory
+    5 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+test/cpp/src/031-address-slice.cc:4:10: fatal error: address.h: No such file or directory
+    4 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/register_allocator.d -MT .csconfig/register_allocator.o -I.csconfig -MF .csconfig/register_allocator.d src/register_allocator.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/ptw.d -MT .csconfig/ptw.o -I.csconfig -MF .csconfig/ptw.d src/ptw.cc
+test/cpp/src/001-operable.cc:3:10: fatal error: operable.h: No such file or directory
+    3 | #include "operable.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/ptw_builder.d -MT .csconfig/ptw_builder.o -I.csconfig -MF .csconfig/ptw_builder.d src/ptw_builder.cc
+test/cpp/src/000-test-main.cc:4:10: fatal error: champsim.h: No such file or directory
+    4 | #include "champsim.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+src/vmem.cc:17:10: fatal error: vmem.h: No such file or directory
+   17 | #include "vmem.h"
+      |          ^~~~~~~~
+compilation terminated.
+src/tracereader.cc:17:10: fatal error: tracereader.h: No such file or directory
+   17 | #include "tracereader.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/plain_printer.d -MT .csconfig/plain_printer.o -I.csconfig -MF .csconfig/plain_printer.d src/plain_printer.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/operable.d -MT .csconfig/operable.o -I.csconfig -MF .csconfig/operable.d src/operable.cc
+test/cpp/src/041-bitwise_ops.cc:5:10: fatal error: util/bits.h: No such file or directory
+    5 | #include "util/bits.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/ooo_cpu.d -MT .csconfig/ooo_cpu.o -I.csconfig -MF .csconfig/ooo_cpu.d src/ooo_cpu.cc
+src/register_allocator.cc:1:10: fatal error: register_allocator.h: No such file or directory
+    1 | #include "register_allocator.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+src/ptw.cc:17:10: fatal error: ptw.h: No such file or directory
+   17 | #include "ptw.h"
+      |          ^~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/modules.d -MT .csconfig/modules.o -I.csconfig -MF .csconfig/modules.d src/modules.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/ab3453911f4fa978_main.d -MT .csconfig/ab3453911f4fa978_main.o -I.csconfig -DCHAMPSIM_BUILD=0xab3453911f4fa978 -MF .csconfig/ab3453911f4fa978_main.d src/main.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/json_printer.d -MT .csconfig/json_printer.o -I.csconfig -MF .csconfig/json_printer.d src/json_printer.cc
+src/ptw_builder.cc:17:10: fatal error: ptw_builder.h: No such file or directory
+   17 | #include "ptw_builder.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/generated_environment.d -MT .csconfig/generated_environment.o -I.csconfig -MF .csconfig/generated_environment.d src/generated_environment.cc
+src/operable.cc:17:10: fatal error: operable.h: No such file or directory
+   17 | #include "operable.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/extent.d -MT .csconfig/extent.o -I.csconfig -MF .csconfig/extent.d src/extent.cc
+src/ooo_cpu.cc:17:10: fatal error: ooo_cpu.h: No such file or directory
+   17 | #include "ooo_cpu.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/dram_stats.d -MT .csconfig/dram_stats.o -I.csconfig -MF .csconfig/dram_stats.d src/dram_stats.cc
+src/modules.cc:17:10: fatal error: modules.h: No such file or directory
+   17 | #include "modules.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/dram_controller.d -MT .csconfig/dram_controller.o -I.csconfig -MF .csconfig/dram_controller.d src/dram_controller.cc
+In file included from src/generated_environment.cc:3:
+.csconfig/core_inst.inc:6:10: fatal error: environment.h: No such file or directory
+    6 | #include "environment.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/core_stats.d -MT .csconfig/core_stats.o -I.csconfig -MF .csconfig/core_stats.d src/core_stats.cc
+test/cpp/src/037-waitable.cc:5:10: fatal error: waitable.h: No such file or directory
+    5 | #include "waitable.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+src/extent.cc:1:10: fatal error: extent.h: No such file or directory
+    1 | #include "extent.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/chrono.d -MT .csconfig/chrono.o -I.csconfig -MF .csconfig/chrono.d src/chrono.cc
+src/dram_stats.cc:1:10: fatal error: dram_stats.h: No such file or directory
+    1 | #include "dram_stats.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/channel.d -MT .csconfig/channel.o -I.csconfig -MF .csconfig/channel.d src/channel.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/champsim.d -MT .csconfig/champsim.o -I.csconfig -MF .csconfig/champsim.d src/champsim.cc
+src/dram_controller.cc:17:10: fatal error: dram_controller.h: No such file or directory
+   17 | #include "dram_controller.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/cache_stats.d -MT .csconfig/cache_stats.o -I.csconfig -MF .csconfig/cache_stats.d src/cache_stats.cc
+src/core_stats.cc:1:10: fatal error: core_stats.h: No such file or directory
+    1 | #include "core_stats.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/cache.d -MT .csconfig/cache.o -I.csconfig -MF .csconfig/cache.d src/cache.cc
+test/cpp/src/020-heartbeat-listener.cc:5:10: fatal error: listeners/heartbeat.h: No such file or directory
+    5 | #include "listeners/heartbeat.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+src/channel.cc:17:10: fatal error: channel.h: No such file or directory
+   17 | #include "channel.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/bandwidth.d -MT .csconfig/bandwidth.o -I.csconfig -MF .csconfig/bandwidth.d src/bandwidth.cc
+src/champsim.cc:17:10: fatal error: champsim.h: No such file or directory
+   17 | #include "champsim.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+src/chrono.cc:17:10: fatal error: chrono.h: No such file or directory
+   17 | #include "chrono.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/address.d -MT .csconfig/address.o -I.csconfig -MF .csconfig/address.d src/address.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/dd7761b8ffac00c6_main.d -MT .csconfig/dd7761b8ffac00c6_main.o -I.csconfig -DCHAMPSIM_BUILD=0xdd7761b8ffac00c6 -MF .csconfig/dd7761b8ffac00c6_main.d src/main.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/0099575a72794c52_main.d -MT .csconfig/0099575a72794c52_main.o -I.csconfig -DCHAMPSIM_BUILD=0x0099575a72794c52 -MF .csconfig/0099575a72794c52_main.d src/main.cc
+src/json_printer.cc:21:10: fatal error: stats_printer.h: No such file or directory
+   21 | #include "stats_printer.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+src/cache.cc:17:10: fatal error: cache.h: No such file or directory
+   17 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/cd2b73f90d0f76c7_main.d -MT .csconfig/cd2b73f90d0f76c7_main.o -I.csconfig -DCHAMPSIM_BUILD=0xcd2b73f90d0f76c7 -MF .csconfig/cd2b73f90d0f76c7_main.d src/main.cc
+g++ @global.options @absolute.options -MM -MT .csconfig/b392bfadc40dd68c_main.d -MT .csconfig/b392bfadc40dd68c_main.o -I.csconfig -DCHAMPSIM_BUILD=0xb392bfadc40dd68c -MF .csconfig/b392bfadc40dd68c_main.d src/main.cc
+src/cache_stats.cc:1:10: fatal error: cache_stats.h: No such file or directory
+    1 | #include "cache_stats.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -MM -MT .csconfig/TEST_main.d -MT .csconfig/TEST_main.o -I.csconfig -DCHAMPSIM_BUILD=0xTEST -MF .csconfig/TEST_main.d src/main.cc
+src/bandwidth.cc:17:10: fatal error: bandwidth.h: No such file or directory
+   17 | #include "bandwidth.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+src/address.cc:1:10: fatal error: address.h: No such file or directory
+    1 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+test/cpp/src/030-address-ops.cc:6:10: fatal error: address.h: No such file or directory
+    6 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/replacement/srrip/srrip.d -MT .csconfig/modules/replacement/srrip/srrip.o -I.csconfig -MF .csconfig/modules/replacement/srrip/srrip.d replacement/srrip/srrip.cc
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/replacement/ship/ship.d -MT .csconfig/modules/replacement/ship/ship.o -I.csconfig -MF .csconfig/modules/replacement/ship/ship.d replacement/ship/ship.cc
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/replacement/random/random.d -MT .csconfig/modules/replacement/random/random.o -I.csconfig -MF .csconfig/modules/replacement/random/random.d replacement/random/random.cc
+src/plain_printer.cc:27:10: fatal error: stats_printer.h: No such file or directory
+   27 | #include "stats_printer.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/replacement/lru/lru.d -MT .csconfig/modules/replacement/lru/lru.o -I.csconfig -MF .csconfig/modules/replacement/lru/lru.d replacement/lru/lru.cc
+In file included from replacement/srrip/srrip.cc:1:
+replacement/srrip/srrip.h:7:10: fatal error: cache.h: No such file or directory
+    7 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/replacement/drrip/drrip.d -MT .csconfig/modules/replacement/drrip/drrip.o -I.csconfig -MF .csconfig/modules/replacement/drrip/drrip.d replacement/drrip/drrip.cc
+In file included from replacement/ship/ship.cc:1:
+replacement/ship/ship.h:7:10: fatal error: cache.h: No such file or directory
+    7 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/prefetcher/va_ampm_lite/va_ampm_lite.d -MT .csconfig/modules/prefetcher/va_ampm_lite/va_ampm_lite.o -I.csconfig -MF .csconfig/modules/prefetcher/va_ampm_lite/va_ampm_lite.d prefetcher/va_ampm_lite/va_ampm_lite.cc
+In file included from replacement/lru/lru.cc:1:
+replacement/lru/lru.h:6:10: fatal error: cache.h: No such file or directory
+    6 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/prefetcher/spp_dev/spp_dev.d -MT .csconfig/modules/prefetcher/spp_dev/spp_dev.o -I.csconfig -MF .csconfig/modules/prefetcher/spp_dev/spp_dev.d prefetcher/spp_dev/spp_dev.cc
+src/main.cc:25:10: fatal error: cache.h: No such file or directory
+   25 | #include "cache.h" // for CACHE
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/prefetcher/no/no.d -MT .csconfig/modules/prefetcher/no/no.o -I.csconfig -MF .csconfig/modules/prefetcher/no/no.d prefetcher/no/no.cc
+In file included from replacement/drrip/drrip.cc:1:
+replacement/drrip/drrip.h:7:10: fatal error: cache.h: No such file or directory
+    7 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/prefetcher/next_line/next_line.d -MT .csconfig/modules/prefetcher/next_line/next_line.o -I.csconfig -MF .csconfig/modules/prefetcher/next_line/next_line.d prefetcher/next_line/next_line.cc
+In file included from prefetcher/spp_dev/spp_dev.cc:1:
+prefetcher/spp_dev/spp_dev.h:7:10: fatal error: cache.h: No such file or directory
+    7 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/prefetcher/ip_stride/ip_stride.d -MT .csconfig/modules/prefetcher/ip_stride/ip_stride.o -I.csconfig -MF .csconfig/modules/prefetcher/ip_stride/ip_stride.d prefetcher/ip_stride/ip_stride.cc
+In file included from prefetcher/no/no.cc:1:
+prefetcher/no/no.h:6:10: fatal error: champsim.h: No such file or directory
+    6 | #include "champsim.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/btb/basic_btb/return_stack.d -MT .csconfig/modules/btb/basic_btb/return_stack.o -I.csconfig -MF .csconfig/modules/btb/basic_btb/return_stack.d btb/basic_btb/return_stack.cc
+src/main.cc:25:10: fatal error: cache.h: No such file or directory
+   25 | #include "cache.h" // for CACHE
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/btb/basic_btb/indirect_predictor.d -MT .csconfig/modules/btb/basic_btb/indirect_predictor.o -I.csconfig -MF .csconfig/modules/btb/basic_btb/indirect_predictor.d btb/basic_btb/indirect_predictor.cc
+In file included from prefetcher/next_line/next_line.cc:1:
+prefetcher/next_line/next_line.h:6:10: fatal error: address.h: No such file or directory
+    6 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/btb/basic_btb/direct_predictor.d -MT .csconfig/modules/btb/basic_btb/direct_predictor.o -I.csconfig -MF .csconfig/modules/btb/basic_btb/direct_predictor.d btb/basic_btb/direct_predictor.cc
+src/main.cc:25:10: fatal error: cache.h: No such file or directory
+   25 | #include "cache.h" // for CACHE
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/btb/basic_btb/basic_btb.d -MT .csconfig/modules/btb/basic_btb/basic_btb.o -I.csconfig -MF .csconfig/modules/btb/basic_btb/basic_btb.d btb/basic_btb/basic_btb.cc
+src/main.cc:25:10: fatal error: cache.h: No such file or directory
+   25 | #include "cache.h" // for CACHE
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/branch/tage/tage.d -MT .csconfig/modules/branch/tage/tage.o -I.csconfig -MF .csconfig/modules/branch/tage/tage.d branch/tage/tage.cc
+src/main.cc:25:10: fatal error: cache.h: No such file or directory
+   25 | #include "cache.h" // for CACHE
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/branch/perceptron/perceptron.d -MT .csconfig/modules/branch/perceptron/perceptron.o -I.csconfig -MF .csconfig/modules/branch/perceptron/perceptron.d branch/perceptron/perceptron.cc
+src/main.cc:25:10: fatal error: cache.h: No such file or directory
+   25 | #include "cache.h" // for CACHE
+      |          ^~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/branch/hashed_perceptron/hashed_perceptron.d -MT .csconfig/modules/branch/hashed_perceptron/hashed_perceptron.o -I.csconfig -MF .csconfig/modules/branch/hashed_perceptron/hashed_perceptron.d branch/hashed_perceptron/hashed_perceptron.cc
+In file included from replacement/random/random.cc:1:
+replacement/random/random.h:6:10: fatal error: cache.h: No such file or directory
+    6 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+In file included from prefetcher/va_ampm_lite/va_ampm_lite.cc:1:
+prefetcher/va_ampm_lite/va_ampm_lite.h:9:10: fatal error: champsim.h: No such file or directory
+    9 | #include "champsim.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+In file included from btb/basic_btb/basic_btb.cc:9:
+btb/basic_btb/basic_btb.h:4:10: fatal error: address.h: No such file or directory
+    4 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/branch/gshare_param/gshare_param.d -MT .csconfig/modules/branch/gshare_param/gshare_param.o -I.csconfig -MF .csconfig/modules/branch/gshare_param/gshare_param.d branch/gshare_param/gshare_param.cc
+In file included from prefetcher/ip_stride/ip_stride.cc:1:
+prefetcher/ip_stride/ip_stride.h:7:10: fatal error: address.h: No such file or directory
+    7 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/branch/gshare/gshare.d -MT .csconfig/modules/branch/gshare/gshare.o -I.csconfig -MF .csconfig/modules/branch/gshare/gshare.d branch/gshare/gshare.cc
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/branch/bimodal_param/bimodal_param.d -MT .csconfig/modules/branch/bimodal_param/bimodal_param.o -I.csconfig -MF .csconfig/modules/branch/bimodal_param/bimodal_param.d branch/bimodal_param/bimodal_param.cc
+g++ @global.options @absolute.options @module.options -MM -MT .csconfig/modules/branch/bimodal/bimodal.d -MT .csconfig/modules/branch/bimodal/bimodal.o -I.csconfig -MF .csconfig/modules/branch/bimodal/bimodal.d branch/bimodal/bimodal.cc
+In file included from btb/basic_btb/direct_predictor.cc:1:
+btb/basic_btb/direct_predictor.h:7:10: fatal error: address.h: No such file or directory
+    7 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+In file included from branch/tage/tage.cc:1:
+branch/tage/tage.h:7:10: fatal error: modules.h: No such file or directory
+    7 | #include "modules.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+In file included from branch/hashed_perceptron/hashed_perceptron.h:9,
+                 from branch/hashed_perceptron/hashed_perceptron.cc:48:
+branch/hashed_perceptron/folded_shift_register.h:6:10: fatal error: modules.h: No such file or directory
+    6 | #include "modules.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+In file included from branch/bimodal/bimodal.cc:1:
+branch/bimodal/bimodal.h:6:10: fatal error: address.h: No such file or directory
+    6 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+In file included from branch/gshare_param/gshare_param.cc:1:
+branch/gshare_param/gshare_param.h:7:10: fatal error: modules.h: No such file or directory
+    7 | #include "modules.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+In file included from btb/basic_btb/indirect_predictor.cc:1:
+btb/basic_btb/indirect_predictor.h:9:10: fatal error: address.h: No such file or directory
+    9 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+In file included from btb/basic_btb/return_stack.cc:1:
+btb/basic_btb/return_stack.h:9:10: fatal error: address.h: No such file or directory
+    9 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+In file included from branch/bimodal_param/bimodal_param.cc:1:
+branch/bimodal_param/bimodal_param.h:7:10: fatal error: modules.h: No such file or directory
+    7 | #include "modules.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+In file included from branch/gshare/gshare.cc:1:
+branch/gshare/gshare.h:7:10: fatal error: modules.h: No such file or directory
+    7 | #include "modules.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+In file included from branch/perceptron/perceptron.cc:39:
+branch/perceptron/perceptron.h:8:10: fatal error: modules.h: No such file or directory
+    8 | #include "modules.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+g++ @global.options @absolute.options -I.csconfig  -c -o .csconfig/address.o src/address.cc
+g++ @global.options @absolute.options -I.csconfig  -c -o .csconfig/bandwidth.o src/bandwidth.cc
+g++ @global.options @absolute.options -I.csconfig  -c -o .csconfig/cache.o src/cache.cc
+g++ @global.options @absolute.options -I.csconfig  -c -o .csconfig/cache_stats.o src/cache_stats.cc
+g++ @global.options @absolute.options -I.csconfig  -c -o .csconfig/champsim.o src/champsim.cc
+g++ @global.options @absolute.options -I.csconfig  -c -o .csconfig/channel.o src/channel.cc
+g++ @global.options @absolute.options -I.csconfig  -c -o .csconfig/chrono.o src/chrono.cc
+g++ @global.options @absolute.options -I.csconfig  -c -o .csconfig/core_stats.o src/core_stats.cc
+g++ @global.options @absolute.options -I.csconfig  -c -o .csconfig/dram_controller.o src/dram_controller.cc
+g++ @global.options @absolute.options -I.csconfig  -c -o .csconfig/dram_stats.o src/dram_stats.cc
+src/address.cc:1:10: fatal error: address.h: No such file or directory
+    1 | #include "address.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+src/bandwidth.cc:17:10: fatal error: bandwidth.h: No such file or directory
+   17 | #include "bandwidth.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:236: .csconfig/address.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Makefile:236: .csconfig/bandwidth.o] Error 1
+src/cache_stats.cc:1:10: fatal error: cache_stats.h: No such file or directory
+    1 | #include "cache_stats.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+src/cache.cc:17:10: fatal error: cache.h: No such file or directory
+   17 | #include "cache.h"
+      |          ^~~~~~~~~
+compilation terminated.
+src/champsim.cc:17:10: fatal error: champsim.h: No such file or directory
+   17 | #include "champsim.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:236: .csconfig/cache_stats.o] Error 1
+src/core_stats.cc:1:10: fatal error: core_stats.h: No such file or directory
+    1 | #include "core_stats.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+src/channel.cc:17:10: fatal error: channel.h: No such file or directory
+   17 | #include "channel.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:236: .csconfig/cache.o] Error 1
+make: *** [Makefile:236: .csconfig/champsim.o] Error 1
+make: *** [Makefile:236: .csconfig/channel.o] Error 1
+make: *** [Makefile:236: .csconfig/core_stats.o] Error 1
+src/chrono.cc:17:10: fatal error: chrono.h: No such file or directory
+   17 | #include "chrono.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+src/dram_stats.cc:1:10: fatal error: dram_stats.h: No such file or directory
+    1 | #include "dram_stats.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:236: .csconfig/chrono.o] Error 1
+make: *** [Makefile:236: .csconfig/dram_stats.o] Error 1
+src/dram_controller.cc:17:10: fatal error: dram_controller.h: No such file or directory
+   17 | #include "dram_controller.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:236: .csconfig/dram_controller.o] Error 1
