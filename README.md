@@ -6,6 +6,8 @@ A simplified TAGE predictor (a bimodal base plus 4 partially tagged tables with 
 
 **Report:** [REPORT.md](REPORT.md) ([PDF](REPORT.pdf))
 
+**New to branch prediction?** Start with the [beginner's guide](docs/GUIDE.md) ([PDF](docs/GUIDE.pdf)): it explains every concept, tool, experiment and result from scratch, with diagrams and viva questions.
+
 ## Headline results
 
 | | bimodal (4 KB) | gshare (4 KB) | TAGE (9 KB) |
@@ -29,6 +31,7 @@ A simplified TAGE predictor (a bimodal base plus 4 partially tagged tables with 
 | `ada/` | SLURM jobs used on IIIT's Ada cluster |
 | `results/` | `mpki.csv` (360 driver runs), `results.csv` and `raw/` (360 ChampSim runs), `figures/`, `summary.md` |
 | `logs/` | Ada job logs |
+| `docs/` | the beginner's guide, its diagrams and the script that draws them |
 
 ## Reproducing
 
