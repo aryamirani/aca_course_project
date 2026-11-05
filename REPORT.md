@@ -151,7 +151,62 @@ This is why TAGE can use *partial* tags: a short tag removes almost all of the h
 
 ### 5.6 IPC
 
-*(IPC results from the ChampSim timing runs on Ada will be added here: per-trace IPC for the baselines, IPC vs storage, and IPC vs MPKI across all configurations.)*
+All 45 configurations were simulated in ChampSim on all 8 traces: 360 timing runs of 10M warmup + 10M instructions each.
+
+![baseline IPC](results/figures/07_baseline_ipc.png)
+
+| trace | bimodal | gshare | TAGE | TAGE vs gshare |
+|---|---|---|---|---|
+| perlbench | 2.124 | 2.139 | 2.156 | +0.8% |
+| gcc | 0.478 | 0.571 | 0.571 | +0.1% |
+| mcf | 0.290 | 0.305 | 0.293 | −3.9% |
+| xalancbmk | 1.120 | 1.120 | 1.164 | +3.9% |
+| x264 | 2.359 | 2.499 | 2.546 | +1.9% |
+| deepsjeng | 1.365 | 1.420 | 1.576 | +11.0% |
+| leela | 1.358 | 1.416 | 1.573 | +11.1% |
+| xz | 1.750 | 1.719 | 1.891 | +10.0% |
+| **geomean** | **1.123** | **1.174** | **1.223** | **+4.2%** |
+
+- **TAGE raises geomean IPC by 4.2% over gshare and by 8.9% over bimodal.**
+- **The gains are largest where the branches are hard and the core is not memory-bound.** On deepsjeng, leela and xz, TAGE removes 4–6 mispredictions per 1000 instructions, which gives a 10–11% speedup.
+- **Where gshare is already accurate, there is little left to gain.** On perlbench, gcc and x264 the gain is 0–2%.
+- **mcf is memory-bound.** Across all 45 configurations, its IPC stays between 0.289 and 0.295 while MPKI ranges from 24 to 33. The one exception is ChampSim's stock gshare at 0.305. That run also has a *higher* MPKI than gshare_l14 (27.3 vs 25.5), so its higher IPC is not explained by branch prediction. I report it as an outlier and do not read the −3.9% as a TAGE slowdown.
+
+![IPC vs storage](results/figures/08_storage_ipc.png)
+
+| storage | ~2 KB | ~4 KB | ~8 KB | ~16 KB | ~32 KB | ~64 KB |
+|---|---|---|---|---|---|---|
+| bimodal | 1.120 | 1.121 | 1.121 | 1.121 | 1.121 | 1.121 |
+| gshare | 1.169 | 1.182 | 1.192 | 1.198 | 1.204 | 1.207 |
+| TAGE | 1.211 | 1.219 | 1.223 | 1.229 | 1.232 | 1.235 |
+
+The storage results follow the MPKI results:
+- The smallest TAGE (2.25 KB, IPC 1.211) outperforms the largest gshare (64 KB, IPC 1.207).
+- Growing TAGE 32-fold, from 2.25 KB to 72 KB, adds only 2.0% IPC.
+- Bimodal does not respond to storage at all.
+
+The other sweeps also have the same ordering in IPC as in MPKI (geomean IPC):
+- **Number of tables:** 1.192 / 1.201 / 1.216 / 1.223 / 1.230 / 1.233 for N = 1, 2, 3, 4, 6, 8.
+- **Fixed 16 KB budget:** 1.209 / 1.206 / 1.229 / 1.233 / 1.232 for N = 1, 2, 4, 8, 16.
+- **History spacing:** geometric 1.223 vs linear 1.213.
+- **Tag width:** 4-bit tags 1.199 vs 9-bit 1.223.
+
+![IPC vs MPKI](results/figures/09_ipc_vs_mpki.png)
+
+| trace | IPC at lowest MPKI | IPC at highest MPKI | ΔIPC per +1 MPKI |
+|---|---|---|---|
+| perlbench | 2.161 | 2.089 | −0.022 |
+| gcc | 0.572 | 0.478 | −0.008 |
+| mcf | 0.293 | 0.290 | −0.000 |
+| xalancbmk | 1.180 | 1.117 | −0.038 |
+| x264 | 2.548 | 2.356 | −0.041 |
+| deepsjeng | 1.608 | 1.365 | −0.028 |
+| leela | 1.622 | 1.358 | −0.030 |
+| xz | 1.923 | 1.719 | −0.037 |
+
+The last column is a least-squares slope over that trace's 45 runs. On the compute-bound traces, IPC is an almost linear function of conditional MPKI, with every predictor and configuration falling on one line. Each extra misprediction per 1000 instructions costs about 2–3% of IPC. This confirms that MPKI, which the trace-driven sweeps in 5.1–5.5 measure, is the quantity that determines performance. The exceptions are:
+- **gcc:** IPC is limited by memory more than by branches (IPC 0.57).
+- **mcf:** IPC is set almost entirely by cache misses.
 
 ### 5.7 Validation of the MPKI methodology
 
@@ -178,7 +233,8 @@ Both methods **rank the three predictors identically on all 8 traces**. The driv
 2. Its advantage does not come from extra storage: TAGE at 2.25 KB beats gshare at 64 KB.
 3. Using several history lengths matters more than total capacity. Geometric spacing is clearly better than linear spacing, with an optimum near Lmax ≈ 130 and Lmin ≈ 5 for 4 tables.
 4. Partial tags of about 8–9 bits are enough. Shorter tags cause false hits; longer tags only add storage.
-5. Data-dependent branches (mcf, leela) dominate the remaining mispredictions. History-based prediction cannot remove them, whatever its size.
+5. In full ChampSim timing simulation, TAGE raises geomean IPC by 4.2% over gshare and by 8.9% over bimodal. The gains reach 10–11% on branch-heavy traces (deepsjeng, leela, xz). On compute-bound traces, IPC falls almost linearly with MPKI, by about 2–3% per extra misprediction per 1000 instructions. Memory-bound mcf hardly responds to the predictor.
+6. Data-dependent branches (mcf, leela) dominate the remaining mispredictions. History-based prediction cannot remove them, whatever its size.
 
 ## 7. Reproducing
 
@@ -198,7 +254,8 @@ python3 scripts/run_mpki.py
 # IPC sweep (ChampSim timing, hours; on Ada: sbatch ada/ipc.sbatch)
 python3 scripts/run_sweeps.py --warmup 10000000 --sim 10000000
 python3 scripts/parse_results.py
-# figures and tables
+# figures, tables and PDF
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python scripts/plot_results.py
+python3 scripts/make_pdf.py
 ```
